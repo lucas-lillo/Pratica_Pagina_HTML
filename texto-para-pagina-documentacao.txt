@@ -1,0 +1,156 @@
+TITULO- HTML5 - Principais elementos 
+
+	HTML - Definição e história resumidas:
+
+	O HTML5 (Hypertext Markup Language 5) é uma linguagem de marcação de hipertexto utilizada por toda a internet, e é a estrutura principal
+	de um site, onde se encontram os elementos estáticos como links, imagens e texto que compõem a o que pode ser considerado o esqueleto do contetúdo do site. 
+	O HTML original foi lançado em 1991, por Tim Berners-Lee, que originalmente era usado apenas como uma forma de resolver 
+	um problema de comunicação de pesquisas entre ele e o grupo de colegas do fisíco. Nessa mesma epóca, a internet estava começando
+	a emergir, e  este padrão de marcação de texto ganhou atenção e adoção mundial.
+	Resumindo a história, as especificações em HTML atualmente vem sendo mantidas pelo World Wide Web Consortium (W3C), que 
+	vêm trabalhando com atualizações da linguagem de marcação de texto desde 1996, com a mais nova atualização sendo o HTML 5.2, 
+	que foi lançado em 2017.
+
+
+	Elementos em HTML:
+
+	O documento HTML é composto por elementos, que também podem ser chamados de tags. Estes elementos definem qual é o
+	tipo de conteúdo ou declaração que será utilizado, e no código eles sempre são declarados com os simbolos "<" e ">" 
+	respectivamente. Um exemplo muito básico é o própio elemento <html> que compõe todo o arquivo HTML. Os elementos
+	que possuem conteúdo também necessitam de uma tag de fechamento  "/" para definir aonde o elemento acaba. 
+	Como exemplo podemos utilizar o elemento <html> citado anteriormente e o elemento <p> que serve para declarar paragrafos de texto. 
+
+	Exemplo da tag de fechamento:
+	
+	<html>
+	<p>
+    	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	</html>
+
+	Acima podemos definir que o documento html acaba depois do elemento de fechamento </html>, e o 
+	elemento <p> e </p> acaba depois do paragráfo de texto dentro do mesmo. Alguns outros elementos 
+	não necessitam de tag de fechamento e são auto-fechados, principalmente elementos que não abrigam nenhum 
+	tipo de conteúdo, como a tag <meta> que será explicada posteriormente. 
+
+
+		Elementos Principais do HTML
+
+	lista:
+		<!DOCTYPE html>
+		<html></html>
+		<head>
+		<meta>
+		<body>
+		<main>
+		<footer>
+
+	<!DOCTYPE html>
+	
+	É uma declaração obrigatória para definir o arquivo como um documento html. Sempre se encontra no topo do documento e 
+	é definido apenas pelo código <!DOCTYPE html>.
+
+	A declaração foi simplificada depois da versão 5 do HTML, que permite que utilizamos apenas a palavra chave html para 
+	o documento ser definido como HTML5.
+
+	<html>	
+	
+	Vem sempre abaixo da declaração <!doctype html>, e compõe todo o documento. Para definir o idioma principal da página, é 
+	necessário declarar o atributo <code>lang=""<code>, com o valor da linguagem sendo sempre definido com apenas dois caracteres,
+	como exemplo temos:
+	lista: 
+		- Portugues: <html lang="pt">
+		- Inglês: <html lang="en">
+		- Francês: <html lang="fr">
+		- Espanhol: <html lang="es">
+		- Alemão: <html lang="de">
+		
+	A tag final de fechamento do elemento <code></html> sempre deve vir no final do arquivo.
+
+	<head>
+
+	O elemento <head> é um dos elementos mais importantes da página, pois o mesmo é utilizado para definir diversas informações
+	cruciais para a configuração da página. Dentro deste elemento, temos elementos importantes que necessitam ser definidos como
+	<link> para conectar o HTML com o CSS, e o mais importante destes elementos dentro de <head> é <meta>, que será analisado
+	a seguir.
+
+	<meta> 
+
+	O elemento <meta> define diversos tipos de metadados para a página da web, como o conjunto de caracteres, descrição da 
+	página, palavras-chave, autores ou autor da página, instruções para motores de busca e até definição do viewport da página
+	para se obter um design responsivo.
+	
+	lista:
+	
+	Exemplos:
+
+	Definição de conjunto de caracteres mais popular, que inclui a maioria dos caracteres dos idiomas escritos:
+	<meta charset="UTF-8">
+	
+	Definição da descrição da página da web (Resumo da página da web que aparece nos mecanismos de pesquisa de sites).
+	<meta name="description" content="Descrição">	O atributo name define que este é um metadado de descrição, enquanto o atributo content 
+	define o conteúdo da descrição
+	
+	Definição de palavras chave da página:
+	<meta name="keywords" content="HTML, HTML5, Código"> O atributo name define que este é um metadado de descrição, enquanto o atributo content
+	define quais são as palavras-chave da página, separados por uma vírgula.
+
+	<body>
+
+	Todo o conteúdo que compõe a página e que será visível para o usuário, precisa estar dentro deste elemento, e isso inclui os elementos que 
+	serão analisados a seguir:
+
+	<main>
+	
+	Este é um elemento de organização para a página, e deve ter apenas um do mesmo no arquivo HTML. Este elemento abriga todo o conteúdo principal
+	da página, e não pode conter elementos de cabeçalho e rodapé e de barras laterais (<header>, <footer> e <aside> respectivamente).
+		
+	Exemplo do main em html:
+
+	<!DOCTYPE html>
+	<html lang="pt-BR">
+	<head>
+	</head>
+	<body>
+		<main>
+			<h1> Titulo de exemplo </h1>		
+			<p>Texto de exemplo</p>
+		</main>
+	</body>
+	</html>
+
+
+	<footer>
+
+	É o elemento que define o rodapé da página, o mesmo se encontra dentro do elemento <body>, mas fora do elemento <main>. Geralmente 
+	é composto por links de redes sociais, autores da página e direitos autorais.
+	Exemplo do footer em código:
+
+		<!DOCTYPE html>
+	<html lang="pt-BR">
+	<head>
+	</head>
+	<body>
+		<main>
+			<h1> Titulo de exemplo </h1>		
+			<p>Texto de exemplo</p>
+		</main>
+		<footer>
+			<p>
+        	  		<a href="https://www.freecodecamp.org" target="_blank">Visite nosso site!</a>
+        		</p>
+		</footer>
+	</body>
+	</html>
+
+
+	
+	referencias:
+
+	https://www.devmedia.com.br/html-doctype/43514
+	https://pt.wikipedia.org/wiki/HTML#Hist%C3%B3ria
+	https://voitto.com.br/blog/artigo/o-que-e-html5
+	https://www.w3.org/International/questions/qa-html-language-declarations.pt-br
