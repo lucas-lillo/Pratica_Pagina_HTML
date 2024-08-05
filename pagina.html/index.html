@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- 
+    (todo)The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+    (todo)Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+    (todo)The .main-section elements should contain at least ten p elements total (not each)
+    (todo)The .main-section elements should contain at least five code elements total (not each)
+    (todo)The .main-section elements should contain at least five li items total (not each)
+    (todo)You can see a nav element with a corresponding id="navbar"
+    (todo)The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+    (todo)Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+    (todo)The header element in the #navbar must come before any link (a) elements in the navbar
+    (todo)Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+    (todo)When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+    (todo)On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+    (todo)Your technical documentation should use at least one media query
+
+    Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML5, quais são seus principais elementos?" />
+    <title>HTML5 - Principais Elementos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<main id="main-doc">
+  <section id="HTML5 - Principais Elementos" class="main-section">
+    <header>
+        <h1>HTML5 - Principais Elementos</h1>
+        <h2>HTML - Definição e História Resumidas:</h2>
+    </header>
+    <p> 
+    O HTML5 (Hypertext Markup Language 5) é uma linguagem de marcação de hipertexto utilizada por toda a internet,<br> e é a estrutura principal
+	de um site, onde se encontram os elementos estáticos como links, imagens e texto que <br> compõem o que pode ser considerado o esqueleto do contetúdo do site. 
+	O HTML original foi lançado em 1991, <br> por Tim Berners-Lee, que originalmente era usado apenas como uma forma de resolver 
+	um problema de comunicação <br> de pesquisas entre ele e o grupo de colegas do fisíco. Nessa mesma epóca, a internet estava começando
+	a emergir, <br> e  este padrão de marcação de texto ganhou atenção e adoção mundial.
+	Resumindo a história, as especificações em <br> HTML atualmente vem sendo mantidas pelo World Wide Web Consortium (W3C), que 
+	vêm trabalhando com <br> atualizações da linguagem de marcação de texto desde 1996, com a mais nova atualização sendo <br> o HTML 5.2, 
+	que foi lançado em 2017.
+    </p>
+  </section>
+  
+  <section id="Elementos em HTML:" class="main-section">
+    <header>
+        <h1>Elementos em HTML:</h1>
+    </header>
+    <p>
+        O documento HTML é composto por elementos, que também podem ser chamados de tags. Estes elementos definem <br> qual é o
+        tipo de conteúdo ou declaração que será utilizado, e no código eles sempre são declarados com os simbolos <br> "<" e ">" 
+        respectivamente. Um exemplo muito básico é o própio elemento <code>&lt;html&gt;</code> que compõe todo o arquivo HTML. <br> Os elementos
+        que possuem conteúdo também necessitam de uma tag de fechamento  "/" para definir aonde o elemento <br> acaba. 
+        Como exemplo podemos utilizar o elemento <code>&lt;html&gt;</code> citado anteriormente e o elemento <code>&lt;p&gt;</code> que serve <br> para declarar paragrafos de texto. 
+    </p>
+
+    <p>Exemplo da tag de fechamento:</p>
+    <p>
+        <code>
+            <span class="margin1">&lt;html&gt;<br> </span>
+            <span class="margin2">&lt;p&gt;<br></span>
+            <span class="margin3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br></span>
+            <span class="margin3">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br></span>
+            <span class="margin3">consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br></span> 
+            <span class="margin3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></span>
+            <span class="margin2">&lt;/p&gt;<br></span>
+             <span class="margin1">&lt;/html&gt;</span>
+        </code>
+    </p>
+    <p>
+    Acima podemos definir que o documento HTML acaba depois do elemento de fechamento <code>&lt;/html&gt;</code>, e o 
+	elemento <br><code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code> acaba depois do paragráfo de texto dentro do mesmo. Alguns outros elementos 
+	não necessitam de <br>tag de fechamento e são auto-fechados, principalmente elementos que não abrigam nenhum 
+	tipo de conteúdo,<br> como a tag <code>&lt;meta&gt;</code> que será explicada posteriormente.    
+    </p>
+  </section>
+  
+  <section id="Elementos Principais do HTML" class="main-section">
+    <header>
+        <h1>Elementos Principais do HTML</h1>
+    </header>
+        <ul>
+            <li>&lt;!DOCTYPE html&gt;</li>
+            <li>&lt;html&gt;</li>
+            <li>&lt;head&gt;</li>
+            <li>&lt;meta&gt;</li>
+            <li>&lt;body&gt;</li>
+            <li>&lt;main&gt;</li>
+            <li>&lt;footer&gt;</li>
+        </ul>
+  </section>
+
+  <section id="!DOCTYPE html" class="main-section">
+    <header>
+        <h1>&lt;!DOCTYPE html&gt;</h1>
+    </header>
+    <p>É uma declaração obrigatória para definir o arquivo como um documento html. Sempre se encontra no topo <br> do documento e 
+    é definido apenas pelo código &lt;!DOCTYPE html&gt;</p>
+
+    <p> A declaração foi simplificada depois da versão 5 do HTML, que permite que utilizamos apenas a palavra chave<br> html para 
+    o documento ser definido como HTML5.</p>
+    <p>Exemplo:</p>
+        <p>
+            <span class="margin1">&lt;!DOCTYPE html&gt;<br></span>
+            <span class="margin1">&lt;html&gt;<br></span>
+            <span class="margin2">&lt;p&gt;Conteúdo do arquivo HTML&lt;/p&gt;<br></span>
+            <span class="margin1">&lt;/html&gt;</span>
+        </p>
+  </section>
+
+  <section class="main-section">
+    <header>
+        <h1>&lt;html&gt;</h1>
+    </header>
+  </section>
+</main>
+</body>
+</html>
