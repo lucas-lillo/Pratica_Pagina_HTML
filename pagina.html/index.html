@@ -2,25 +2,14 @@
 <html lang="pt-BR">
 <head>
   <!-- 
-    (todo)The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
-    (todo)Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
-    (todo)The .main-section elements should contain at least ten p elements total (not each)
-    (todo)The .main-section elements should contain at least five code elements total (not each)
-    (todo)The .main-section elements should contain at least five li items total (not each)
-    (todo)You can see a nav element with a corresponding id="navbar"
-    (todo)The navbar element should contain one header element which contains text that describes the topic of the technical documentation
-    (todo)Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
-    (todo)The header element in the #navbar must come before any link (a) elements in the navbar
-    (todo)Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
-    (todo)When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+    You can see a nav element with a corresponding id="navbar"
+    The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+    Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+    The header element in the #navbar must come before any link (a) elements in the navbar
+    Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+    When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
     (todo)On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
     (todo)Your technical documentation should use at least one media query
-
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,10 +18,29 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
+<nav id="navbar">
+    <header id="navheader"><h1>HTML - Principais Elementos</h1>
+    <ul class="navlinks">
+        <li><a class="nav-link" href="#HTML5_Principais_Elementos">HTML5 Principais Elementos </a></li>
+        <li><a class="nav-link" href="#Elementos_em_HTML:">Elementos em HTML:</a></li>
+        <li><a class="nav-link" href="#Elementos_Principais_do_HTML">Elementos Principais do HTML</a></li>
+        <li><a class="nav-link" href="#!DOCTYPE_html">&lt;!DOCTYPE html&gt;</a></li>
+        <li><a class="nav-link" href="#html">&lt;html&gt;</a></li>
+        <li><a class="nav-link" href="#head">&lt;head&gt;</a></li>
+        <li><a class="nav-link" href="#meta">&lt;meta&gt;</a></li>
+        <li><a class="nav-link" href="#body">&lt;body&gt;</a></li>
+        <li><a class="nav-link" href="#main">&lt;main&gt;</a></li>
+        <li><a class="nav-link" href="#footer">&lt;footer&gt;</a></li>
+    </ul>
+    </header>
+</nav>
+
+
 <main id="main-doc">
-  <section id="HTML5 - Principais Elementos" class="main-section">
+  <section id="HTML5_Principais_Elementos" class="main-section">
     <header>
-        <h1>HTML5 - Principais Elementos</h1>
+        <h1 id="HTML5">HTML5 - Principais Elementos</h1>
         <h2>HTML - Definição e História Resumidas:</h2>
     </header>
     <p> 
@@ -47,7 +55,7 @@
     </p>
   </section>
   
-  <section id="Elementos em HTML:" class="main-section">
+  <section id="Elementos_em_HTML:" class="main-section">
     <header>
         <h1>Elementos em HTML:</h1>
     </header>
@@ -61,14 +69,11 @@
 
     <p>Exemplo da tag de fechamento:</p>
     <p>
-        <code>
+        <code class="code1">
             <span class="margin1">&lt;html&gt;<br> </span>
-            <span class="margin2">&lt;p&gt;<br></span>
-            <span class="margin3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br></span>
-            <span class="margin3">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br></span>
-            <span class="margin3">consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br></span> 
-            <span class="margin3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></span>
-            <span class="margin2">&lt;/p&gt;<br></span>
+            <span class="margin2">&lt;p&gt;</span>
+            <span>Texto de Exemplo.</span>
+            <span>&lt;/p&gt;<br></span>
              <span class="margin1">&lt;/html&gt;</span>
         </code>
     </p>
@@ -80,44 +85,146 @@
     </p>
   </section>
   
-  <section id="Elementos Principais do HTML" class="main-section">
+  <section id="Elementos_Principais_do_HTML" class="main-section">
     <header>
         <h1>Elementos Principais do HTML</h1>
     </header>
         <ul>
-            <li>&lt;!DOCTYPE html&gt;</li>
-            <li>&lt;html&gt;</li>
-            <li>&lt;head&gt;</li>
-            <li>&lt;meta&gt;</li>
-            <li>&lt;body&gt;</li>
-            <li>&lt;main&gt;</li>
-            <li>&lt;footer&gt;</li>
+            <li><code>&lt;!DOCTYPE html&gt;</code></li>
+            <li><code>&lt;html&gt;</code></li>
+            <li><code>&lt;head&gt;</code></li>
+            <li><code>&lt;meta&gt;</code></li>
+            <li><code>&lt;body&gt;</code></li>
+            <li><code>&lt;main&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
         </ul>
   </section>
 
-  <section id="!DOCTYPE html" class="main-section">
-    <header>
-        <h1>&lt;!DOCTYPE html&gt;</h1>
-    </header>
-    <p>É uma declaração obrigatória para definir o arquivo como um documento html. Sempre se encontra no topo <br> do documento e 
-    é definido apenas pelo código &lt;!DOCTYPE html&gt;</p>
-
-    <p> A declaração foi simplificada depois da versão 5 do HTML, que permite que utilizamos apenas a palavra chave<br> html para 
-    o documento ser definido como HTML5.</p>
-    <p>Exemplo:</p>
-        <p>
+    <section id="!DOCTYPE_html" class="main-section">
+        <header>
+            <h1>&lt;!DOCTYPE html&gt;</h1>
+        </header>
+        <p>É uma declaração obrigatória para definir o arquivo como um documento html. Sempre se encontra no topo <br> do documento e 
+        é definido apenas pelo código <code>&lt;!DOCTYPE html&gt;</code></p>
+        <p> A declaração foi simplificada depois da versão 5 do HTML, que permite que utilizamos apenas a palavra chave<br> html para 
+        o documento ser definido como HTML5.</p>
+        <p>Exemplo:</p>
+        <p><code class="code1">
             <span class="margin1">&lt;!DOCTYPE html&gt;<br></span>
             <span class="margin1">&lt;html&gt;<br></span>
             <span class="margin2">&lt;p&gt;Conteúdo do arquivo HTML&lt;/p&gt;<br></span>
             <span class="margin1">&lt;/html&gt;</span>
+        </code>
         </p>
-  </section>
+    </section>
 
-  <section class="main-section">
-    <header>
-        <h1>&lt;html&gt;</h1>
-    </header>
-  </section>
+    <section id="html" class="main-section">
+        <header>
+            <h1>&lt;html&gt;</h1>
+        </header>
+        <p>Vem sempre abaixo da declaração <code>&lt;!DOCTYPE html&gt;</code>, e envolve todo o documento. <br> Para definir o idioma principal da página, é 
+            necessário declarar o atributo <code>lang=""</code>, com o valor do idioma. <br> Como Exemplo temos:</p>
+            <ul>
+                <li>Português Brasileiro: <code>&lt;html lang="pt-Br"&gt;</code></li>
+                <li>Inglês: <code>&lt;html lang="en"&gt;</code></li>
+                <li>Francês: <code>&lt;html lang="fr"&gt;</code></li>
+                <li>Espanhol: <code>&lt;html lang="es"&gt;</code></li>
+                <li>Alemão: <code>&lt;html lang="de"&gt;</code></li>
+            </ul>
+        <p>A tag final de fechamento do elemento <code>&lt;/html&gt;</code> sempre deve vir no final do arquivo.</p>
+    </section>
+
+    <section id="head" class="main-section">
+        <header>
+            <h1>&lt;head&gt;</h1>
+        </header>
+            <p>O elemento <code>&lt;head&gt;</code>é um dos elementos mais importantes da página, pois o mesmo é utilizado <br> para definir diversas informações
+            cruciais para a configuração dos metadados do site. Dentro <br> deste elemento, temos elementos importantes que necessitam ser definidos como
+            <code>&lt;link&gt;</code><br> para conectar o HTML com o CSS, e o mais importante destes elementos dentro de <br><code>&lt;head&gt;</code>é o<code>&lt;meta&gt;</code>, que será analisado a seguir.</p>
+    </section>
+
+    <section id="meta" class="main-section">
+        <header><h1>&lt;meta&gt;</h1></header>
+        <p>O elemento <code>&lt;meta&gt;</code> define diversos tipos de metadados para a página da web, como o conjunto<br> de caracteres, descrição da 
+            página, palavras-chave, autores ou autor da página, instruções para<br> motores de busca e até definição do viewport da página
+            para se obter um design responsivo.</p>
+        <p>Exemplos:</p>
+        <ul>
+            <li>Definição de conjunto de caracteres mais popular, que inclui a maioria dos caracteres dos idiomas escritos:<br> 
+            <code>&lt;meta charset="UTF-8"&gt;</code></li>
+            <li>Definição da descrição da página da web (Resumo da página da web que aparece nos mecanismos de pesquisa de sites): <br>
+            <code>&lt;meta name="description" content="Descrição do site"&gt;</code> <br><br>O  atributo <code>name="description"</code> define que este é um metadado de descrição,<br> enquanto o atributo 
+            <code>content="Descrição do site"</code> define o conteúdo da descrição.<br></li>
+            <li>Definição de palavras chave da página: <br>
+            <code>&lt;meta name="keywords" content="HTML, HTML5, Código"&gt;</code><br>
+            O atributo <code>name="keywords"</code> define que este é um metadado de descrição,<br> 
+            enquanto o atributo <code>content="HTML, HTML5, Código"</code> define quais são as<br>
+            palavras-chave da página, separadas por uma vírgula.</li>
+        </ul>
+        <p>Existem ainda mais metadados que podem ser definidos com o elemento <code>&lt;meta&gt;</code>, mas estes são <br>
+        os principais, que geralmente são sempre utilizados em qualquer página na web.</p>
+    </section>  
+
+    <section id="body" class="main-section">
+        <header><h1>&lt;body&gt;</h1></header>
+        <p>Todo o conteúdo que engloba a página e que será visível para o usuário, precisa estar dentro <br>
+            deste elemento, e isso inclui os elementos que serão analisados a seguir:
+        </p>
+    </section>
+
+    <section id="main" class="main-section">
+        <header><h1>&lt;main&gt;</h1></header>
+        <p>Este é um elemento de organização para a página, e deve ter apenas um do mesmo no arquivo HTML. <br>
+        Este elemento abriga todo o conteúdo principal da página, e não pode conter elementos de <br> cabeçalho e rodapé e de barras laterais
+        (<code>&lt;header&gt;</code>,<code>&lt;footer&gt;</code> e <code>&lt;aside&gt;</code> respectivamente.)</p>
+        <p>Exemplo do <code>&lt;main&gt;</code> em HTML:</p>
+        <p><code class="code1">
+            <span class="margin1">&lt;!DOCTYPE html&gt;<br></span>
+            <span class="margin1">&lt;html lang="pt-BR"&gt;<br></span>
+            <span class="margin1">&lt;head&gt;<br></span>
+            <span class="margin1">&lt;/head&gt;<br></span>
+            <span class="margin1">&lt;body&gt;<br></span>
+            <span class="margin2">&lt;main&gt;<br></span>
+            <span class="margin3">&lt;h1&gt; Título de Exemplo &lt;/h1&gt;<br></span>
+            <span class="margin3">&lt;p&gt;Texto de Exemplo&lt;/p&gt;<br></span>
+            <span class="margin2">&lt;/main&gt;<br></span>
+            <span class="margin1">&lt;/body&gt;<br></span>
+            <span class="margin1">&lt;/html&gt;<br></span>
+        </code></p>
+    </section>
+
+        <section id="footer" class="main-section">
+            <header><h1>&lt;footer&gt;</h1></header>
+            <p>É o elemento que define o rodapé da página, o mesmo se encontra dentro do elemento <code>&lt;body&gt;</code>, <br>
+            mas fora do elemento <code>&lt;main&gt;</code>. Geralmente é composto por links de redes sociais,<br> 
+            autores da página e direitos autorais.</p>
+            <p>Exemplo do <code>&lt;footer&gt;</code> em código:</p>
+            <p>
+                <code class="code1">
+                    <span class="margin1">&lt;!DOCTYPE html&gt;<br></span>
+                    <span class="margin1">&lt;html lang="pt-BR"&gt;<br></span>
+                    <span class="margin1">&lt;head&gt;<br></span>
+                    <span class="margin1">&lt;/head&gt;<br></span>
+                    <span class="margin1">&lt;body&gt;<br></span>
+                    <span class="margin2">&lt;main&gt;<br></span>
+                    <span class="margin3">&lt;h1&gt; Título de Exemplo &lt;/h1&gt;<br></span>
+                    <span class="margin3">&lt;p&gt;Texto de Exemplo&lt;/p&gt;<br></span>
+                    <span class="margin2">&lt;/main&gt;<br></span>
+                    <span class="margin2">&lt;footer&gt;<br></span>
+                    <span class="margin3">&lt;p&gt;<br></span>
+                    <span class="margin4">&lt;a href="https://www.freecodecamp.org" target="_blank"&gt;Visite nosso site!&lt;/a&gt;<br></span>
+                    <span class="margin3">&lt;/p&gt;<br></span>
+                    <span class="margin2">&lt;/footer&gt;<br></span>
+                    <span class="margin1">&lt;/body&gt;<br></span>
+                    <span class="margin1">&lt;/html&gt;<br></span>
+                </code>
+            </p>
+        </section>
 </main>
+<footer>
+    <h1>Referências:</h1>
+    <p><a href="https://www.devmedia.com.br/html-doctype/43514">Devmedia.com</a> <a href="https://pt.wikipedia.org/wiki/HTML#Hist%C3%B3ria">Wikipedia.com</a>
+    <a href="https://voitto.com.br/blog/artigo/o-que-e-html5">voitto.com.br</a> <a href="https://www.w3.org/International/questions/qa-html-language-declarations.pt-br">w3.org</a>
+</footer>
 </body>
 </html>
